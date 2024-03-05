@@ -8,7 +8,8 @@
 }
 
 main{
-    display: flex;   
+    display: flex; 
+    padding-bottom: 20px;  
 }
 
 h1{
@@ -47,6 +48,13 @@ color: rgb(255, 255, 255);
     line-height: 18px;
     word-wrap: break-word;
     width: fit-content;
+}
+
+.botones{
+    display: flex;
+    position: relative;
+    left: 40px;
+    
 }
 
 .encriptarBtn {
@@ -112,7 +120,9 @@ color: rgb(255, 255, 255);
     border-radius: 24px;
     padding: 15px 80px;
     letter-spacing: 1px;
-    cursor: pointer
+    cursor: pointer;
+    position: relative;
+    top: 20px;
 }
 
 .btnCopiar:hover {
@@ -122,17 +132,18 @@ color: rgb(255, 255, 255);
 
 .footer {
     background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer{
     color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-align: center;
     font-size: large;
     font-style: italic;
 }
 
+p.foot{
+    margin: 5px;
+}
 .github-link {
-    color: #ffffff;
+    
     text-decoration: none;
 }
