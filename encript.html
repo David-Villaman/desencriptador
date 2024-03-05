@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Encriptador v2</title>
+    <link rel="stylesheet" href="encriptadorStyle.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="logo de alura">
+    </header>
+    <main>
+        <section class="prueba">
+            <h1>Encriptador</h1>
+            <textarea class="texto-ingresar" placeholder="Ingrese el texto aqui." minlength="1" rows="28" cols="80"
+                oninput="validateInput(this)"></textarea>
+            <div class="warning"> <img src="img/bi_exclamation-circle-fill.svg" alt="">Solo letras minúsculas y sin
+                acentos
+            </div>
+            <div class="botones">
+                <button class="button encriptarBtn" onclick="btnEncriptar()">Encriptar</button>
+                <button class="button desencriptarBtn" onclick="btnDesEncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <textarea id="txtarea" class="texto-resultado" rows="28" cols="80"></textarea>
+            <div class="copiarBtn">
+                <button class="btnCopiar" onclick="btnCopiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="foot">&copy; David Villaman | <a href="https://github.com/David-Villaman?tab=repositories"
+                class="github-link">GitHub</a></p>
+    </footer>
+    <script src="metodos.js"></script>
+</body>
+
+</html>
